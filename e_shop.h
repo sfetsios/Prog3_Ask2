@@ -7,10 +7,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
-
-#define BUFFER_SIZE 100
-
+#include <time.h>
+#define TOTAL_ITEMS 20
 
 typedef struct {
     char description[50];
@@ -37,6 +35,6 @@ typedef struct {
 
 
 void ftiakse_katastima(Katastima *katastima);
-int process_order(Katastima *katastima, parag *order);
+int process_order(Katastima *katastima, int i);
 
 #endif 
